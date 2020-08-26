@@ -8,9 +8,10 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    @battersea = addresses
+    @battersea = File.open("./text_files/battersea.txt")
     erb :welcome
   end
+
 
 =begin  get "/" do
     erb :
