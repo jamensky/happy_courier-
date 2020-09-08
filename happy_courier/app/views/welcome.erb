@@ -3,8 +3,9 @@
 
 <html>
 
-<h1>Addresses: <%=@battersea%> </h1>
-<li>
-
+<h1>Addresses: </h1>
+<%Battersea.addresses.collect do |address|%>
+<%= address%>
+<%end%>
 
 </html>

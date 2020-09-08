@@ -8,13 +8,17 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    @battersea = File.open("./text_files/battersea.txt")
     erb :welcome
   end
 
+=begin
+  get "/create"
 
-=begin  get "/" do
-    erb :
+  get "/read"
+
+  get "/update"
+
+  get "/delete"
 =end
 
 end
